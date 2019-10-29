@@ -4,10 +4,10 @@
 
 int main()
 {
-    matrix<3, 3> x = {{1, 2, 3}};
-    matrix<3, 4> y = {{1, 2, 3, 4}};
+    matrix<3, 3> x{{0,1,2}};
+    matrix<3, 4> y{{0,1,2,3}};
 
-    auto a = least_squares(x, y);
+    matrix<3, 4> a = least_squares(x, y);
 
     return 0;
 }

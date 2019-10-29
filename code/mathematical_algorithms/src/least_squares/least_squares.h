@@ -2,8 +2,13 @@
 
 #include <array>
 
-template <unsigned int N, unsigned int M>
+template <size_t N, size_t M>
 using matrix = std::array<std::array<double, M>, N>;
 
-template <unsigned int N, unsigned int M, unsigned int P>
-matrix<N, M>  least_squares(const matrix<N, M> &x, const matrix<N, P> &y);
+template <size_t N, size_t M, size_t P>
+matrix<M, P>  least_squares(const matrix<N, M> &x, const matrix<N, P> &y)
+{
+    matrix<M, P> a{0};
+
+    return a;
+}
